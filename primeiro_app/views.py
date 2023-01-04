@@ -6,6 +6,7 @@ from .models import Livro
 from .form import LivroForm
 
 
+
 def home(request):
     dados = {"agora": datetime.now()}
     return render(request, "primeiro_app/home.html", dados)
